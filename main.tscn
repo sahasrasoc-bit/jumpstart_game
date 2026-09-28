@@ -1485,7 +1485,9 @@ texture = ExtResource("2_1bvp3")
 position = Vector2(147, -177)
 shape = SubResource("RectangleShape2D_m65un")
 
-[node name="Camera2D" type="Camera2D" parent="Player 1" unique_id=2119804914]
+[node name="Camera2D" type="Camera2D" parent="Player 1" unique_id=1478158397]
+position = Vector2(150, -175)
+position_smoothing_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=60652864]
 scale = Vector2(3, 3)
