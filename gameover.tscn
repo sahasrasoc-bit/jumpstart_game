@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://g2iimi4b5lh5"]
+
+[ext_resource type="Script" uid="uid://dg710pyf8fuj8" path="res://gameover.gd" id="1_4nh4k"]
+[ext_resource type="Texture2D" uid="uid://baao82e85k6cw" path="res://pastel-yellow-color-solid-background-1920x1080.png" id="2_tpdqf"]
+
+[sub_resource type="TileSet" id="TileSet_m65un"]
+
+[node name="gameover" type="CanvasLayer" unique_id=1007921115]
+script = ExtResource("1_4nh4k")
+
+[node name="Play Again" type="Button" parent="." unique_id=1102853269]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -6.0
+offset_right = 67.0
+offset_bottom = 61.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/icon_normal_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0.39215687, 0, 1)
+text = "Play Again"
+
+[node name="Quit" type="Button" parent="." unique_id=1159886733]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = 89.0
+offset_right = 47.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/icon_normal_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0.39215687, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0.39215687, 0, 1)
+text = "Quit"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1288531142]
+tile_set = SubResource("TileSet_m65un")
+
+[node name="Label" type="Label" parent="." unique_id=636701064]
+offset_left = 273.0
+offset_top = 187.0
+offset_right = 885.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(0.4745098, 0.23137255, 0.19215687, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Good job! You won! "
+
+[node name="PastelYellowColorSolidBackground1920x1080" type="Sprite2D" parent="." unique_id=1643466514]
+z_index = -1
+position = Vector2(619, 365)
+texture = ExtResource("2_tpdqf")
+
+[connection signal="pressed" from="Play Again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
