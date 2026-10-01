@@ -22,5 +22,3 @@ You can play the game on itch.io: https://sahasrasoc.itch.io/almost-there
 
 - Godot Engine
 - The power of youtube and hack club presentaions
-
-[MIT / All rights reserved / etc.]
